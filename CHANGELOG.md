@@ -1,5 +1,16 @@
 ## Unreleased
 
+## 1.14.0 / 2022-11-08
+
+* [FEATURE] Add Support for Native Histograms. #1150
+* [CHANGE] Extend `prometheus.Registry` to implement `prometheus.Collector` interface. #1103
+
+## 1.13.1 / 2022-11-01
+
+* [BUGFIX] Fix race condition with Exemplar in Counter. #1146
+* [BUGFIX] Fix `CumulativeCount` value of `+Inf` bucket created from exemplar. #1148
+* [BUGFIX] Fix double-counting bug in `promhttp.InstrumentRoundTripperCounter`. #1118
+
 ## 1.13.0 / 2022-08-05
 
 * [CHANGE] Minimum required Go version is now 1.17 (we also test client_golang against new 1.19 version).
